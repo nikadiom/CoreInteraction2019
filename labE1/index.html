@@ -1,0 +1,87 @@
+<! DOCTYPE html>
+<html>
+<head>
+    
+    <title>exercise 1
+    </title>
+    <style>
+        
+     p.myText { color:#fff; text-shadow:2px 2px 2px #000;
+        font-size: 60px;
+        text-align: center;}
+        
+        p.myText1 { text-shadow:-2px -2px 2px pink; font-size: 60px;
+        text-align: center;}
+        
+        p.myText2 { color:transparent; text-shadow:0 0 5px red;
+         font-size: 60px;
+        text-align: center;}
+        
+        p.myText3 { color:white; text-shadow:-1px -1px 0 blueviolet,-1px 1px 0 blueviolet,1px -1px 0 blueviolet,1px 1px 0 blueviolet; font-size: 60px;
+        text-align: center;}
+
+        
+        .glow {
+  font-size: 80px;
+
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px deepskyblue, 0 0 40px deepskyblue, 0 0 50px deepskyblue, 0 0 60px , 0 0 70px lightblue, 0 0 80px deepskyblue;
+  }
+}
+    </style>
+    
+</head>
+<body>
+   <h1>Exercise 1</h1> 
+    <h2>Text Shadow</h2>
+    Definition and Usage
+The text-shadow property adds shadow to text.<br>
+This property accepts a comma-separated list of <br>
+shadows to be applied to the text.<br><br>
+    
+   <b> CSS Syntax:</b>
+    text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;<br><br>
+    
+    
+     <img src="imgs/1.jpg" alt="img1.jpg" width="300" height="300"> 
+    <a href="https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/"> Example 1</a><br>
+    
+    <img src="imgs/2.jpg" alt="img1.jpg" width="300" height="300"> 
+     <a href="https://freefrontend.com/css-text-shadow-effects/">Example 2</a><br>
+    
+    <img src="imgs/3.jpg" alt="img1.jpg" width="300" height="300"> 
+    
+     <a href="https://www.wheretheheckismatt.com/"> Example 3</a><br>
+    
+      <img src="imgs/4.jpg" alt="img1.jpg" width="300" height="300"> 
+    <a href="https://www.thisiscolossal.com/"> Example 4</a><br>
+    
+      <img src="imgs/5.jpg" alt="img1.jpg" width="300" height="300"> 
+    <a href="https://www.shiner.com//"> Example 5</a><br>
+    
+    <h1>Practice:</h1>
+    <h1 class="glow">GLOW</h1> 
+    
+    <p class="myText">BARELY THERE</p>
+    
+    <p class="myText1">SHADOW</p>
+    
+     <p class="myText2">BLURRY</p>
+    
+    <p class="myText3">OUTLINE</p>
+    
+  
+</body>
+</html>
