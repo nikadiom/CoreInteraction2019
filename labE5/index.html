@@ -1,0 +1,66 @@
+<! DOCTYPE html>
+<html>
+<head>
+    
+    <title>Exercise 5
+    </title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    
+</head>
+<body>
+   <h1>Exercise 5</h1>
+    <br>
+    //When the window opens, EventListener will load a function to (e)
+<br>window.addEventListener('load', function(e) {
+	<br>var appleGrid = document.getElementById('apple-grid'); 
+    <br>// variable appleGrid assigned to all child elements with the specified ID 'apple-grid'
+	<br>var appleList = document.getElementById('apple-list');
+    <br>//  variable appleList assigned to all child elements with the specified ID 'apple-list'
+    <br>
+	var appleThumbs = document.getElementById('apple-thumbs');
+    <br>//assign  variable appleThumbs assigned to all child elements with the specified ID 'apple-thumbs'<br>
+	var gridApples = document.querySelectorAll('.apple'); <br>// variable gridApples assigned to all child elements with the specified ID '.apple'<br><br>
+
+    
+
+	<br>gridApples.forEach((gridApple, i) => {<br>//for elements under '.apple' -- on click, perform pickApple function:<br>
+		gridApple.addEventListener('click', pickApple);
+	});
+
+    
+   <br> //assigned to perform the function pickApple
+	<br>function pickApple(e) {
+       <br> //appleGrid assign to all child elements with the ID <br>'apple-grid'
+	<br>	var apple = e.target;
+	<br>	var appleName = apple.dataset.apple.toString();
+        
+
+<br>// each item assign of appleaListItem to as a list element
+		<br>var appleListItem = document.createElement('li');
+   <br>     
+     //each appleList arranged as element into an ordered list   
+	<br>	var appleListItem = document.createElement('li');
+
+    <br>     //appleListItem is added to an element in an ordered list
+	<br>	var ol = appleList.querySelector('ol');
+	<br>	ol.appendChild(appleListItem);
+    <br>    //appleListItems are added to appleName
+	<br>	appleListItem.innerText = appleName;
+        
+     <br>   //appleListItem are added to element within an ordered list
+	<br>	var appleThumb = apple.cloneNode(true);
+        
+       <br>  //to appleThumbs elements, add an appleThumb
+	<br>	appleThumbs.appendChild(appleThumb);
+
+	<br>}
+
+<br>});
+   
+
+  
+</body>
+</html>
