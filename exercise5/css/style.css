@@ -1,0 +1,93 @@
+body{
+/*   background:#fff; */
+ background-color:yellow;
+background-image:
+radial-gradient(red,  2px, transparent 40px),
+
+radial-gradient(red,  2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.canvas{
+  position:relative;
+  margin:30px auto;
+  width:100%;
+}
+#path_1 {
+  position:absolute;
+  left:0px;
+  top:0;
+}
+.circle {
+  position:absolute;
+    width: 200px;
+    height: 200px;
+    
+  left:200px;
+  top:200px;
+  transform-origin:bottom;
+}
+#circle_1{
+  animation:motion_1 6s linear 0s infinite normal forwards running;
+}
+#circle_2{
+  animation:motion_1 4s linear 30ms infinite normal forwards running;
+  opacity:.6;
+}
+#circle_3{
+  animation:motion_1 5s linear 60ms infinite normal forwards running;
+  opacity:.3;
+}
+
+@keyframes motion_1 {
+  0%{
+    transform:translatey(-100) rotatez(0);
+  }
+  27% {
+    transform:translatex(210px) rotatez(0);
+  }
+  50% {
+    transform:translatex(200px) rotatez(180deg);
+  }
+  77%{
+    transform:translatex(1) rotatez(190deg);
+  }
+  100% {
+    transform:translatey(-90) rotatez(350deg);
+  }
+}
+
+#circle_10{
+  animation:motion_10 5s linear 0s infinite normal backwards running;
+}
+#circle_20{
+  animation:motion_10 4s linear 30ms infinite normal forwards running;
+  opacity:.6;
+}
+#circle_30{
+  animation:motion_10 3s linear 60ms infinite normal backwards running;
+  opacity:.3;
+}
+
+@keyframes motion_10 {
+  0%{
+    transform:translatey(90) rotatez(360deg);
+  }
+  27% {
+    transform:translatex(0) rotatez(180deg);
+  }
+  50% {
+    transform:translatex(200px) rotatez(180deg);
+  }
+  77%{
+    transform:translatex(200px) rotatez(0);
+  }
+  100% {
+    transform:translatey(90) rotatez(0);
+  }
+}
+
+
+
+
+
