@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
 // Define constants
@@ -27,3 +29,38 @@ cameraTrigger.onclick = function() {
 };
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
+
+
+                 
+    
+    
+    var doc = $(document);
+    
+    
+    var width = $(document).width() + 100 ;        
+    var height = $(document).height() + 100;   
+                 
+                 
+                 
+                 
+      var shapes = [ $("#one"), $("#two"), $("#four"), $("#five") ]           
+                 
+                 
+       function randomStuff() {        
+      var randomShape =  shapes[ Math.floor( Math.random() * shapes.length) ]          
+      var clone = randomShape.clone().appendTo('body');         
+     
+      clone.last().css('left', Math.random() * width)
+    clone.last().css('top', Math.random() * height)
+   } 
+    
+      
+      
+     setInterval(function(){
+         
+         randomStuff();}, 1000) 
+      
+      
+      
+        })
+      
