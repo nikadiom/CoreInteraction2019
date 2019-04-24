@@ -5,13 +5,13 @@ $(document).ready(function(){
     var doc = $(document);
     
     
-    var width = $(document).width() - 100;        
-    var height = $(document).height() - 100;   
+    var width = $(document).width() + 100 ;        
+    var height = $(document).height() + 100;   
                  
                  
                  
                  
-      var shapes = [ $(".circle"), $(".triangle"), $(".square") ]           
+      var shapes = [ $("#one"), $("#two"), $("#four"), $("#five") ]           
                  
                  
        function randomStuff() {        

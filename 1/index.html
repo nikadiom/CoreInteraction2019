@@ -13,35 +13,49 @@ body {
     background-color: grey;
 }
 
-.circle {
-top:-100px;
-left:-100px;
-background-color: mediumpurple;
-height: 100px;
-width: 100px;
-border-radius:100px ;
+#one {
+top:-10000px;
+left:-10000px;
+background-image: url(imgs/1.jpg);
+height: 100%;
+width: 100%;
 position: fixed;
+      background-size: contain;
+            background-repeat: no-repeat;
 }
     
-    .square {
-top:-100px;
-left:-100px;
-background-color: red;
-height: 100px;
-width: 100px;
-
+    #two {
+top:-10000px;
+left:-10000px;
+height: 100%;
+width: 100%;
+background-image: url(imgs/2.jpg);
 position: fixed;
+          background-size: contain;
+            background-repeat: no-repeat;
 }
     
-    .triangle{
-top:-210px;
-left:-210px;
-height: 0px;
-width: 0px;
-border-left:50px solid transparent ;
-        border-bottom:100px solid green;
-        border-right:50px solid transparent ;
+    
+        #four {
+top:-10000px;
+left:-10000px;
+height: 100%;
+width: 100%;
+background-image: url(imgs/4.jpg);
 position: fixed;
+          background-size: contain;
+            background-repeat: no-repeat;
+}
+    
+        #five {
+top:-10000px;
+left:-10000px;
+height: 100%;
+width: 100%;
+background-image: url(imgs/5.jpg);
+position: fixed;
+          background-size: contain;
+            background-repeat: no-repeat;
 }
     
     
@@ -49,9 +63,11 @@ position: fixed;
 </head>
 
 <body>
-<div class="circle"></div>
- <div class="square"></div>   
-    <div class="triangle"></div>
+<div id="one"></div>
+ <div id="two"></div>   
+     <div id="four"></div> 
+     <div id="five"></div> 
+    
     
     
     
