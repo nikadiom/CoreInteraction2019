@@ -48,6 +48,7 @@ width: 200px;
 position: fixed;
       background-size: contain;
             background-repeat: no-repeat;
+    pointer-events: none;
 }
     
     #two {
@@ -59,6 +60,8 @@ background-image: url(imgs/2.jpg);
 position: fixed;
           background-size: contain;
             background-repeat: no-repeat;
+            pointer-events: none;
+
 }
     
     
@@ -71,6 +74,8 @@ background-image: url(imgs/4.jpg);
 position: fixed;
           background-size: contain;
             background-repeat: no-repeat;
+                pointer-events: none;
+
 }
     
         #five {
@@ -82,5 +87,7 @@ background-image: url(imgs/5.jpg);
 position: fixed;
           background-size: contain;
             background-repeat: no-repeat;
+                pointer-events: none;
+
 }
     

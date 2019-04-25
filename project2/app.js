@@ -52,6 +52,9 @@ window.addEventListener("load", cameraStart, false);
      
       clone.last().css('left', Math.random() * width)
     clone.last().css('top', Math.random() * height)
+           
+            clone.last().css('width', Math.random() * width)
+    clone.last().css('height', Math.random() * height)
    } 
     
       
