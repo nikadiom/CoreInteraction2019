@@ -28,22 +28,22 @@
 }
 .cover h1 {
   font-size: 2.2em;
- font-family: 'Zeyada', cursive;
+font-family: 'IM Fell DW Pica SC', serif;
   padding: 0.5em;
   text-align: center;
-  color: red;
+  color: white;
 }
 
 .cover h2 {
   font-size: 1.2em;
- font-family: 'Zeyada', cursive;
+font-family: 'IM Fell DW Pica SC', serif;
   padding: 0.5em;
   text-align: center;
-  color: red;
+  color: white;
 }
 .page {
   padding: 1.1em;
-  font-family: 'PT Serif', serif;
+  font-family: 'IM Fell DW Pica SC', serif;
   font-size: 0.65em;
   line-height: 1.2em;
   color: #222;
@@ -56,6 +56,9 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.1);
   transition: inherit;
+}
+img{
+    float:left;
 }
 .page:after {
   content: '';
@@ -94,7 +97,7 @@
 }
 
 .page h2 + p:first-letter {
-  font-family: 'UnifrakturCook', cursive;
+  font-family: 'IM Fell DW Pica SC', serif;
   font-size: 2.2em;
   line-height: 0.6em;
   color: #333;
@@ -107,7 +110,6 @@
 }
 .page img {
   width: 100%;
-  float: right;
   padding: 0 0 0px 4px;
 }
 .open {

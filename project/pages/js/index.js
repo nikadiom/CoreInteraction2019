@@ -1,4 +1,4 @@
-const cardss = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
@@ -14,11 +14,12 @@ function isElementInViewport(el) {
 function isCardVisible() {
   for (card of cards) {
     isElementInViewport(card) ?
-   card.classList.add("isVisible") :
+    card.classList.add("isVisible") :
     card.classList.remove("isVisible");
   }
 }
 
-document.addEventListener("DOMContentLoaded", iscardVisibleVisible);
-window.addEventListener("scroll", isPageVisible);
-window.addEventListener("resize", isPageVisible);
+document.addEventListener("DOMContentLoaded", isCardVisible);
+window.addEventListener("scroll", isCardVisible);
+window.addEventListener("resize", isCardVisible);
+

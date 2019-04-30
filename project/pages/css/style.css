@@ -1,70 +1,88 @@
 
-.slideshow {
+.wrapper {
   display: flex;
   height: 100vh;
-    width: 100vw;
   align-items: center;
   box-sizing: border-box;
-  
 }
 
 body, html{
     background-color: black;
 }
-.page {
+.card {
   margin: 0 3vw;
-  width: 25vw;
+color: transparent;
+    height: 600px;
+    width: 450px;
   flex-shrink: 0;
   padding: 2vw;
   box-sizing: border-box;
   position: relative;
-  border-radius: 3px;
-  border: 2px solid #000;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
-.page-title {
-  transition: .3s;
+
+.card.full{
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+   
+   
+}
+
+.card.full img{
+    width: 80vw;
+    height: auto;
+    opacity: 1;
+    position:fixed;
+    left: 125px; 
+    top: 0px;
+   
+    
+    
+
+}
+
+
+.card-caption {
+  transition: .6s;
   text-align: center;
-  font-family: 'Space Mono', monospace;
-  margin: 2vw 0 0;
-  font-size: 2.8vw;
-  opacity: 0;
+
+ 
+  
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
 }
-.page:last-child:after {
+.card:last-child:after {
   content: "";
-  width: 6vw;
+  
   position: absolute;
   height: 100%;
   right: -6vw;
   top: 0;
 }
-.page img {
-  max-width: 70%;
-  max-height: 50vh;
+.card img {
+ 
   opacity: 0;
-  margin: 200px;
+  margin: auto;
   display: block;
   transition: .35s;
-  -webkit-transform: rotate(6deg) translate(0, 40px) scaleY(0.6);
-          transform: rotate(6deg) translate(0, 40px) scaleY(0.6);
+  
 }
-.page.isVisible img {
+.card.isVisible img {
   max-width: 100%;
   opacity: 1;
   -webkit-transform: none;
           transform: none;
 }
-.page.isVisible .page-title {
+.card.isVisible .card-title {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
   transition-delay: .1s;
 }
-.page:first-child {
+.card:first-child {
   margin-left: 6vw;
 }
