@@ -43,7 +43,7 @@ window.addEventListener("load", cameraStart, false);
                  
                  
                  
-      var shapes = [ $("#one"), $("#two"), $("#four"), $("#five") ]           
+      var shapes = [ $("#one"), $("#two"), $("#four"), $("#three"), $("#five") ]           
                  
                  
        function randomStuff() {        
