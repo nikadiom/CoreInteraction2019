@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", isCardVisible);
 window.addEventListener("scroll", isCardVisible);
 window.addEventListener("resize", isCardVisible);
 
+
+$('.card').click(function() {
+    $(this).toggleClass('full')
+ });
+
+

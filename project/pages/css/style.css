@@ -10,10 +10,10 @@ body, html{
     background-color: black;
 }
 .card {
-  margin: 0 3vw;
+  margin: 0 .3vw;
 color: transparent;
-    height: 600px;
-    width: 450px;
+   
+    
   flex-shrink: 0;
   padding: 2vw;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ color: transparent;
   flex-direction: column;
 }
 
-.card.full{
+.full{
     position: fixed;
     width: 100vw;
     height: auto;
@@ -32,16 +32,16 @@ color: transparent;
    
 }
 
-.card.full img{
+.full img{
     width: 80vw;
     height: auto;
     opacity: 1;
     position:fixed;
     left: 125px; 
     top: 0px;
-   
+    overflow-y: scroll;
     
-    
+     
 
 }
 
