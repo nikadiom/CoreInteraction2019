@@ -13,51 +13,42 @@ body, html{
   margin: 0 .3vw;
 color: transparent;
    
-    
+    overflow-y: scroll;
   flex-shrink: 0;
   padding: 2vw;
   box-sizing: border-box;
   position: relative;
-  display: flex;
+  
   justify-content: space-between;
   flex-direction: column;
 }
 
-.full{
-    position: fixed;
-    width: 100vw;
-    height: auto;
-    z-index: 1;
-   
+. full{
+    background-color: black;
+   overflow-y: scroll; 
+    display: flex;
+    opacity: 1;
    
 }
 
 .full img{
-    width: 80vw;
-    height: auto;
+    width: auto;
+ height: 100vh;
     opacity: 1;
-    position:fixed;
-    left: 125px; 
+    left: 0px; 
     top: 0px;
-    overflow-y: scroll;
-    
+    z-index: 1;
+    position: relative;;
+    opacity: 1;
+    background-size: contain;
+            background-repeat: no-repeat;
      
 
 }
 
 
-.card-caption {
-  transition: .6s;
-  text-align: center;
 
- 
-  
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-}
-.card:last-child:after {
-  content: "";
-  
+.card:last-child:after { 
   position: absolute;
   height: 100%;
   right: -6vw;
@@ -65,7 +56,7 @@ color: transparent;
 }
 .card img {
  
-  opacity: 0;
+  opacity: 0.3;
   margin: auto;
   display: block;
   transition: .35s;
