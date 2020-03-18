@@ -1,0 +1,80 @@
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+body, html{
+    background-color: white;
+
+}
+.card {
+  margin: 0 .3vw;
+color: transparent;
+   
+    overflow-y: scroll;
+  flex-shrink: 0;
+  padding: 2vw;
+  box-sizing: border-box;
+  position: relative;
+  
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+. full{
+    background-color: white;
+   overflow-y: scroll; 
+    display: flex;
+    opacity: 1;
+   
+}
+
+.full img{
+    width: auto;
+ height: 110vh;
+    opacity: 1;
+    left: 0px; 
+    top: 0px;
+    z-index: 1;
+    position: relative;;
+    opacity: 1;
+    background-size: contain;
+            background-repeat: no-repeat;
+     
+
+}
+
+
+
+.card:last-child:after { 
+  position: absolute;
+ 
+  right: -6vw;
+  top: 0;
+}
+.card img {
+ 
+  opacity: 0.3;
+  margin: auto;
+  display: block;
+  transition: .35s;
+  
+}
+.card.isVisible img {
+  max-width: 100%;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+.card.isVisible .card-title {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  transition-delay: .1s;
+}
+.card:first-child {
+  margin-left: 6vw;
+}
